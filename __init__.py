@@ -1,40 +1,6 @@
-#
-# Copyright (C) 2009-2020 the sqlparse authors and contributors
-# <see AUTHORS file>
-#
-# This module is part of python-sqlparse and is released under
-# the BSD License: https://opensource.org/licenses/BSD-3-Clause
+# IANA versions like 2020a are not valid PEP 440 identifiers; the recommended
+# way to translate the version is to use YYYY.n where `n` is a 0-based index.
+__version__ = "2023.3"
 
-from sqlparse.filters.others import SerializerUnicode
-from sqlparse.filters.others import StripCommentsFilter
-from sqlparse.filters.others import StripWhitespaceFilter
-from sqlparse.filters.others import SpacesAroundOperatorsFilter
-
-from sqlparse.filters.output import OutputPHPFilter
-from sqlparse.filters.output import OutputPythonFilter
-
-from sqlparse.filters.tokens import KeywordCaseFilter
-from sqlparse.filters.tokens import IdentifierCaseFilter
-from sqlparse.filters.tokens import TruncateStringFilter
-
-from sqlparse.filters.reindent import ReindentFilter
-from sqlparse.filters.right_margin import RightMarginFilter
-from sqlparse.filters.aligned_indent import AlignedIndentFilter
-
-__all__ = [
-    'SerializerUnicode',
-    'StripCommentsFilter',
-    'StripWhitespaceFilter',
-    'SpacesAroundOperatorsFilter',
-
-    'OutputPHPFilter',
-    'OutputPythonFilter',
-
-    'KeywordCaseFilter',
-    'IdentifierCaseFilter',
-    'TruncateStringFilter',
-
-    'ReindentFilter',
-    'RightMarginFilter',
-    'AlignedIndentFilter',
-]
+# This exposes the original IANA version number.
+IANA_VERSION = "2023c"
