@@ -1,101 +1,176 @@
 Metadata-Version: 2.1
-Name: Django
-Version: 4.2.7
-Summary: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
-Home-page: https://www.djangoproject.com/
-Author: Django Software Foundation
-Author-email: foundation@djangoproject.com
-License: BSD-3-Clause
-Project-URL: Documentation, https://docs.djangoproject.com/
-Project-URL: Release notes, https://docs.djangoproject.com/en/stable/releases/
-Project-URL: Funding, https://www.djangoproject.com/fundraising/
-Project-URL: Source, https://github.com/django/django
-Project-URL: Tracker, https://code.djangoproject.com/
-Platform: UNKNOWN
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Environment :: Web Environment
-Classifier: Framework :: Django
-Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: BSD License
-Classifier: Operating System :: OS Independent
-Classifier: Programming Language :: Python
+Name: Pillow
+Version: 10.1.0
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Jeffrey A. Clark (Alex)
+Author-email: aclark@aclark.net
+License: HPND
+Project-URL: Documentation, https://pillow.readthedocs.io
+Project-URL: Source, https://github.com/python-pillow/Pillow
+Project-URL: Funding, https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi
+Project-URL: Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html
+Project-URL: Changelog, https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst
+Project-URL: Twitter, https://twitter.com/PythonPillow
+Project-URL: Mastodon, https://fosstodon.org/@pillow
+Keywords: Imaging
+Classifier: Development Status :: 6 - Mature
+Classifier: License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND)
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3 :: Only
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
 Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.11
-Classifier: Topic :: Internet :: WWW/HTTP
-Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
-Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
-Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
-Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Digital Camera
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Screen Capture
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Multimedia :: Graphics :: Viewers
 Requires-Python: >=3.8
+Description-Content-Type: text/markdown
 License-File: LICENSE
-License-File: LICENSE.python
-License-File: AUTHORS
-Requires-Dist: asgiref (<4,>=3.6.0)
-Requires-Dist: sqlparse (>=0.3.1)
-Requires-Dist: backports.zoneinfo ; python_version < "3.9"
-Requires-Dist: tzdata ; sys_platform == "win32"
-Provides-Extra: argon2
-Requires-Dist: argon2-cffi (>=19.1.0) ; extra == 'argon2'
-Provides-Extra: bcrypt
-Requires-Dist: bcrypt ; extra == 'bcrypt'
+Provides-Extra: docs
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: olefile ; extra == 'docs'
+Requires-Dist: sphinx >=2.4 ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-inline-tabs ; extra == 'docs'
+Requires-Dist: sphinx-removed-in ; extra == 'docs'
+Requires-Dist: sphinxext-opengraph ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: check-manifest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: defusedxml ; extra == 'tests'
+Requires-Dist: markdown2 ; extra == 'tests'
+Requires-Dist: olefile ; extra == 'tests'
+Requires-Dist: packaging ; extra == 'tests'
+Requires-Dist: pyroma ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-timeout ; extra == 'tests'
 
-======
-Django
-======
+<p align="center">
+    <img width="248" height="250" src="https://raw.githubusercontent.com/python-pillow/pillow-logo/main/pillow-logo-248x250.png" alt="Pillow logo">
+</p>
 
-Django is a high-level Python web framework that encourages rapid development
-and clean, pragmatic design. Thanks for checking it out.
+# Pillow
 
-All documentation is in the "``docs``" directory and online at
-https://docs.djangoproject.com/en/stable/. If you're just getting started,
-here's how we recommend you read the docs:
+## Python Imaging Library (Fork)
 
-* First, read ``docs/intro/install.txt`` for instructions on installing Django.
+Pillow is the friendly PIL fork by [Jeffrey A. Clark (Alex) and
+contributors](https://github.com/python-pillow/Pillow/graphs/contributors).
+PIL is the Python Imaging Library by Fredrik Lundh and Contributors.
+As of 2019, Pillow development is
+[supported by Tidelift](https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=readme&utm_campaign=enterprise).
 
-* Next, work through the tutorials in order (``docs/intro/tutorial01.txt``,
-  ``docs/intro/tutorial02.txt``, etc.).
+<table>
+    <tr>
+        <th>docs</th>
+        <td>
+            <a href="https://pillow.readthedocs.io/?badge=latest"><img
+                alt="Documentation Status"
+                src="https://readthedocs.org/projects/pillow/badge/?version=latest"></a>
+        </td>
+    </tr>
+    <tr>
+        <th>tests</th>
+        <td>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/lint.yml"><img
+                alt="GitHub Actions build status (Lint)"
+                src="https://github.com/python-pillow/Pillow/workflows/Lint/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test.yml"><img
+                alt="GitHub Actions build status (Test Linux and macOS)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test-windows.yml"><img
+                alt="GitHub Actions build status (Test Windows)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test%20Windows/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test-mingw.yml"><img
+                alt="GitHub Actions build status (Test MinGW)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test%20MinGW/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test-cygwin.yml"><img
+                alt="GitHub Actions build status (Test Cygwin)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test%20Cygwin/badge.svg"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/test-docker.yml"><img
+                alt="GitHub Actions build status (Test Docker)"
+                src="https://github.com/python-pillow/Pillow/workflows/Test%20Docker/badge.svg"></a>
+            <a href="https://ci.appveyor.com/project/python-pillow/Pillow"><img
+                alt="AppVeyor CI build status (Windows)"
+                src="https://img.shields.io/appveyor/build/python-pillow/Pillow/main.svg?label=Windows%20build"></a>
+            <a href="https://github.com/python-pillow/Pillow/actions/workflows/wheels.yml"><img
+                alt="GitHub Actions build status (Wheels)"
+                src="https://github.com/python-pillow/Pillow/workflows/Wheels/badge.svg"></a>
+            <a href="https://app.travis-ci.com/github/python-pillow/Pillow"><img
+                alt="Travis CI wheels build status (aarch64)"
+                src="https://img.shields.io/travis/com/python-pillow/Pillow/main.svg?label=aarch64%20wheels"></a>
+            <a href="https://app.codecov.io/gh/python-pillow/Pillow"><img
+                alt="Code coverage"
+                src="https://codecov.io/gh/python-pillow/Pillow/branch/main/graph/badge.svg"></a>
+            <a href="https://bugs.chromium.org/p/oss-fuzz/issues/list?sort=-opened&can=1&q=proj:pillow"><img
+                alt="Fuzzing Status"
+                src="https://oss-fuzz-build-logs.storage.googleapis.com/badges/pillow.svg"></a>
+        </td>
+    </tr>
+    <tr>
+        <th>package</th>
+        <td>
+            <a href="https://zenodo.org/badge/latestdoi/17549/python-pillow/Pillow"><img
+                alt="Zenodo"
+                src="https://zenodo.org/badge/17549/python-pillow/Pillow.svg"></a>
+            <a href="https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=badge"><img
+                alt="Tidelift"
+                src="https://tidelift.com/badges/package/pypi/Pillow?style=flat"></a>
+            <a href="https://pypi.org/project/Pillow/"><img
+                alt="Newest PyPI version"
+                src="https://img.shields.io/pypi/v/pillow.svg"></a>
+            <a href="https://pypi.org/project/Pillow/"><img
+                alt="Number of PyPI downloads"
+                src="https://img.shields.io/pypi/dm/pillow.svg"></a>
+            <a href="https://www.bestpractices.dev/projects/6331"><img
+                alt="OpenSSF Best Practices"
+                src="https://www.bestpractices.dev/projects/6331/badge"></a>
+        </td>
+    </tr>
+    <tr>
+        <th>social</th>
+        <td>
+            <a href="https://gitter.im/python-pillow/Pillow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img
+                alt="Join the chat at https://gitter.im/python-pillow/Pillow"
+                src="https://badges.gitter.im/python-pillow/Pillow.svg"></a>
+            <a href="https://twitter.com/PythonPillow"><img
+                alt="Follow on https://twitter.com/PythonPillow"
+                src="https://img.shields.io/badge/tweet-on%20Twitter-00aced.svg"></a>
+            <a href="https://fosstodon.org/@pillow"><img
+                alt="Follow on https://fosstodon.org/@pillow"
+                src="https://img.shields.io/badge/publish-on%20Mastodon-595aff.svg"
+                rel="me"></a>
+        </td>
+    </tr>
+</table>
 
-* If you want to set up an actual deployment server, read
-  ``docs/howto/deployment/index.txt`` for instructions.
+## Overview
 
-* You'll probably want to read through the topical guides (in ``docs/topics``)
-  next; from there you can jump to the HOWTOs (in ``docs/howto``) for specific
-  problems, and check out the reference (``docs/ref``) for gory details.
+The Python Imaging Library adds image processing capabilities to your Python interpreter.
 
-* See ``docs/README`` for instructions on building an HTML version of the docs.
+This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.
 
-Docs are updated rigorously. If you find any problems in the docs, or think
-they should be clarified in any way, please take 30 seconds to fill out a
-ticket here: https://code.djangoproject.com/newticket
+The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.
 
-To get more help:
+## More Information
 
-* Join the ``#django`` channel on ``irc.libera.chat``. Lots of helpful people
-  hang out there. See https://web.libera.chat if you're new to IRC.
+- [Documentation](https://pillow.readthedocs.io/)
+  - [Installation](https://pillow.readthedocs.io/en/latest/installation.html)
+  - [Handbook](https://pillow.readthedocs.io/en/latest/handbook/index.html)
+- [Contribute](https://github.com/python-pillow/Pillow/blob/main/.github/CONTRIBUTING.md)
+  - [Issues](https://github.com/python-pillow/Pillow/issues)
+  - [Pull requests](https://github.com/python-pillow/Pillow/pulls)
+- [Release notes](https://pillow.readthedocs.io/en/stable/releasenotes/index.html)
+- [Changelog](https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst)
+  - [Pre-fork](https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst#pre-fork)
 
-* Join the django-users mailing list, or read the archives, at
-  https://groups.google.com/group/django-users.
+## Report a Vulnerability
 
-To contribute to Django:
-
-* Check out https://docs.djangoproject.com/en/dev/internals/contributing/ for
-  information about getting involved.
-
-To run Django's test suite:
-
-* Follow the instructions in the "Unit tests" section of
-  ``docs/internals/contributing/writing-code/unit-tests.txt``, published online at
-  https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/#running-the-unit-tests
-
-Supporting the Development of Django
-====================================
-
-Django's development depends on your contributions. 
-
-If you depend on Django, remember to support the Django Software Foundation: https://www.djangoproject.com/fundraising/
-
-
+To report a security vulnerability, please follow the procedure described in the [Tidelift security policy](https://tidelift.com/docs/security).
